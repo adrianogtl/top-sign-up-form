@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- normalize.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="background"></section>
+    <form class="content" method="get" action="/index.html">
+      <div class="content-div">
+        <h2>First, we need to know more about you</h2>
+      </div>
+      <div class="content-div">
+        <div>
+          <p>Fields marked with an asterisk (*) are required</p>
+        </div>
+        <div class="form-container" action="#">
+          <div class="form-item">
+            <input type="text" name="firstname" id="firstname" required />
+            <label for="firstname">First name</label>
+          </div>
+          <div class="form-item">
+            <input type="text" name="last-name" id="last-name" />
+            <label for="last-name">Last name</label>
+          </div>
+          <div class="form-item">
+            <input type="email" name="email" id="email" required />
+            <label for="email">Email</label>
+          </div>
+          <div class="form-item">
+            <input type="tel" name="phone" id="phone" />
+            <label for="phone">Phone</label>
+          </div>
+          <div class="form-item">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder=""
+              minlength="8"
+              maxlength="20"
+              required
+            />
+            <label for="password">Password</label>
+          </div>
+          <div class="form-item">
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder=""
+              minlength="8"
+              maxlength="20"
+              required
+            />
+            <label for="confirm-password">Confirm password</label>
+          </div>
+        </div>
+      </div>
+      <div class="content-div">
+        <button type="submit">Create account</button>
+        <p>
+          Already have an account?
+          <span class="span-link"><a href="#">Log in</a></span>
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
