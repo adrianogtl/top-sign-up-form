@@ -20,6 +20,8 @@ body {
 }
 
 .background {
+  display: flex;
+  flex-direction: column-reverse;
   flex: 2 0 40%;
   background-color: var(--primaryColor);
   background-image: url(assets/background.jpg);
@@ -33,7 +35,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: space-between; */
 }
 
 .content-div {
@@ -110,7 +111,12 @@ footer {
   text-align: center;
 
   span {
+    color: var(--white);
     margin-right: 1rem;
+  }
+
+  a {
+    color: var(--ice);
   }
 }
 
